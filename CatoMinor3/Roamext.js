@@ -11,14 +11,18 @@
       console.log("start");
       let divBlockTagAttributeArray;
       let divBlock = element.parentElement.parentElement;
-      const tagAttribute = element.getAttribute('data-tag');
+      const tagAttribute = " " + element.getAttribute('data-tag') + " ";
+      
+      
       
 
       
       let divBlockTagAttribute = divBlock.getAttribute("data-tags");
+      
       if (divBlockTagAttribute ==  null){
         divBlockTagAttributeArray = [];
       } else {
+        
         divBlockTagAttributeArray = divBlockTagAttribute.split(","); 
       }
     
@@ -42,7 +46,7 @@
       }
       console.log(divBlockTagAttributeArray);
       divBlock.dataset.tags = divBlockTagAttributeArray.join();
-      divBlock.parentNode.parentNode.parentNode.dataset.tagsUp = divBlockTagAttributeArray.join();
+      divBlock.parentNode.parentNode.parentNode.dataset.tagsUp = " " + divBlockTagAttributeArray.join() + " ";
      // divBlock.parentNode.parentNode.parentNode.childNodes[0].dataset.tagsDown = divBlockTagAttributeArray.join();
 
 
