@@ -1,6 +1,5 @@
 /* Bullets */
-.roam-block-container > div > div:nth-child(1)
-> .controls > .rm-bullet .rm-bullet__inner  {
+.rm-bullet__inner  {
   /*border-radius: 50%;*/
   width: 3px;
   height: 3px;
@@ -11,8 +10,8 @@
 }
 
 /* Eksperiment fra CatoMinor3: (aktiv bullet blir rød og firkantet)*/
-.roam-block-container:focus-within > div > div:nth-child(1)
-> .controls > .rm-bullet .rm-bullet__inner {
+.roam-block-container:focus-within > .rm-block-main > div:nth-child(1) 
+.rm-bullet .rm-bullet__inner {
    background-color: rgb(196,150,150);
   width: 8px;
   height: 3px;
