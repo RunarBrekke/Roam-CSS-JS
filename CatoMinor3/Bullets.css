@@ -1,0 +1,11 @@
+/* Bullets */
+.roam-block-container > div > div:nth-child(1)
+> .controls > .rm-bullet .rm-bullet__inner  {
+  /*border-radius: 50%;*/
+  width: 3px;
+  height: 3px;
+  background-color: #9E9E9E;
+}
+.roam-bullet-closed { 
+    background-color:  #CECBDB;
+}
