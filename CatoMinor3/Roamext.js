@@ -1,4 +1,7 @@
 
+/* 
+v.03 beta
+*/
 
 ;(()=>{
   
@@ -10,10 +13,10 @@
     document.querySelectorAll('[data-tag]').forEach( (element)=>{
       console.log("start");
       let divBlockTagAttributeArray;
-      let divBlock = element.parentElement.parentElement;
+      let divBlock = element.closest("div");
       const tagAttribute = " " + element.getAttribute('data-tag') + " ";
       
-      
+  
       
 
       
