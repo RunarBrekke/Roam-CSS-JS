@@ -18,7 +18,7 @@
 
 // settings
 window.ViktorOpts = {
-	dateformat: 'YYYY.MM.DD EEE',	// see for details: https://github.com/thesved/ViktoRoam/blob/master/js/dateformat.js
+	dateformat: 'YYYY-MM-DD',	// see for details: https://github.com/thesved/ViktoRoam/blob/master/js/dateformat.js
 	nameMonths: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
 	nameMonthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
 	nameDays: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
@@ -31,14 +31,14 @@ window.ViktorOpts = {
 // plugins handling
 (()=>{
 	var load = {
-		'gallery': true,	// zoom in on images 
-		'longtap': true,	// long tap for right clicking on touch devices
+		'gallery': false,	// zoom in on images 
+		'longtap': false,	// long tap for right clicking on touch devices
 		'dateformatter': true,	// display dates differently than `January 1st, 2020` format
-		'relativelinks': true,	// have relative links, like [next block](block:next)
-		'export': true,		// `ctrl + S` for quickly exporting the whole database
-		'blockcss': true,	// create css for blocks with tags, eg #block:hide
+		'relativelinks': false,	// have relative links, like [next block](block:next)
+		'export': false,		// `ctrl + S` for quickly exporting the whole database
+		'blockcss': false,	// create css for blocks with tags, eg #block:hide
 		'autoenclose': true,	// automatically enclose " and ' characters
-		'fuckitline': true,	// use #fuckitline on a block and it highlights the first 3 children
+		'fuckitline': false,	// use #fuckitline on a block and it highlights the first 3 children
 	};
 
 	var defaultrepo = 'https://js.limitlessroam.com/js/';
