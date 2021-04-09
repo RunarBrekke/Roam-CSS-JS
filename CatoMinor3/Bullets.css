@@ -10,7 +10,7 @@
 }
 
 /* Eksperiment fra CatoMinor3: (aktiv bullet blir rød og firkantet)*/
-.roam-block-container:focus-within > .rm-block-main > div:nth-child(1) 
+/*.roam-block-container:focus-within > .rm-block-main > div:nth-child(1) 
 .rm-bullet .rm-bullet__inner {
    background-color: rgb(196,150,150);
   width: 8px;
@@ -18,3 +18,4 @@
   border-radius: 0px;
   transition: width 300ms linear, height 300ms linear, border-radius 300ms linear;
 }
+*/
